@@ -8,24 +8,49 @@
 body{
 font-family: Arial;
 margin:0;
-background:#f4f4f4;
+background:linear-gradient(120deg,#007BFF,#00c6ff);
 text-align:center;
 }
 
-.header{
-background:#007BFF;
-color:white;
-padding:30px;
+/* Girgit Color Text */
+
+.rainbow{
+font-size:42px;
+font-weight:bold;
+background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+-webkit-background-clip:text;
+color:transparent;
+animation:colorMove 3s infinite linear;
 }
 
-img{
+@keyframes colorMove{
+0%{filter:hue-rotate(0deg);}
+100%{filter:hue-rotate(360deg);}
+}
+
+.header{
+color:white;
+padding:40px;
+}
+
+.profile{
 width:150px;
 border-radius:50%;
+border:5px solid white;
 margin-top:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
 
 .section{
-padding:40px;
+background:white;
+margin:30px;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+h2{
+color:#007BFF;
 }
 
 button{
@@ -35,12 +60,33 @@ color:white;
 border:none;
 font-size:16px;
 cursor:pointer;
+border-radius:25px;
+transition:0.3s;
+}
+
+button:hover{
+background:#0056b3;
+transform:scale(1.05);
 }
 
 .footer{
 background:black;
 color:white;
 padding:15px;
+margin-top:20px;
+}
+
+/* WhatsApp Floating Button */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:1000;
+}
+
+.whatsapp img{
+width:60px;
 }
 
 </style>
@@ -50,67 +96,78 @@ padding:15px;
 <body>
 
 <!-- WhatsApp Floating Button -->
-<a href="https://api.whatsapp.com/send?phone=923278172478"
-style="
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px;
-border-radius:50%;
-font-size:20px;
-text-decoration:none;
-z-index:1000;
-">
-W
+
+<a href="https://wa.me/923278172478?text=Hello%20%F0%9F%A4%97%20Afzal%20Mughal"
+class="whatsapp" target="_blank">
+
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+
 </a>
 
 <div class="header">
-<h1>Afzal Mughal</h1>
-<p>IT Student | Website Developer</p>
-</div>
 
-<img src="photo.jpg">
+<h1 class="rainbow">Afzal Mughal</h1>
+
+<p style="color:white;">IT Student | Website Developer</p>
+
+<img src="photo.jpg" class="profile">
+
+</div>
 
 <div class="section">
 
-<h2>About Me</h2>
+<h2 class="rainbow">About Me</h2>
+
 <p>Hello! My name is Afzal Mughal. I am an IT student and I create simple websites for students and small businesses.</p>
 
-<h2>Contact Info</h2>
+<h2 class="rainbow">Contact Info</h2>
+
 <p><b>Phone:</b> 03278172478</p>
+
 <p><b>Email:</b> afzalmughal72478@gmail.com</p>
 
-<h2>Education</h2>
+<h2 class="rainbow">Education</h2>
+
 <p>IT Student (3rd Year)</p>
 
-<h2>Skills</h2>
+<h2 class="rainbow">Skills</h2>
+
 <p>✔ HTML Website Development</p>
+
 <p>✔ Simple Portfolio Websites</p>
+
 <p>✔ Basic Computer Skills</p>
+
 <p>✔ Manual & Automatic Car Driving</p>
 
-<h2>Objective</h2>
+<h2 class="rainbow">Objective</h2>
+
 <p>I am looking for job opportunities in website development or driving.</p>
 
-<h2>My Services</h2>
+<h2 class="rainbow">My Services</h2>
+
 <p>✔ Simple Websites</p>
+
 <p>✔ Student Portfolio</p>
+
 <p>✔ Small Business Website</p>
 
 <br>
 
-<a href="https://api.whatsapp.com/send?phone=923278172478" target="_blank">
+<a href="https://wa.me/923278172478?text=Hello%20%F0%9F%A4%97%20Afzal%20Mughal" target="_blank">
+
 <button style="background:#25D366;">
 Chat on WhatsApp
 </button>
+
 </a>
 
 </div>
 
 <div class="footer">
+
 <p>© 2026 Afzal Mughal</p>
+
 </div>
 
 </body>
