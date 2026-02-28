@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Afzal Mughal Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 
 body{
-font-family: Arial;
+font-family:Arial;
 margin:0;
 background:linear-gradient(120deg,#007BFF,#00c6ff);
 text-align:center;
 }
 
-/* Girgit Color Text */
-
 .rainbow{
-font-size:42px;
+font-size:40px;
 font-weight:bold;
-background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+background: linear-gradient(90deg, red, orange, navy, yellow, blue, indigo, violet);
 -webkit-background-clip:text;
 color:transparent;
-animation:colorMove 3s infinite linear;
+animation:colorMove 4s infinite linear;
 }
 
 @keyframes colorMove{
@@ -30,7 +32,7 @@ animation:colorMove 3s infinite linear;
 
 .header{
 color:white;
-padding:40px;
+padding:30px;
 }
 
 .profile{
@@ -38,77 +40,74 @@ width:150px;
 border-radius:50%;
 border:5px solid white;
 margin-top:20px;
-box-shadow:0 5px 15px rgba(0,0,0,0.3);
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
 }
 
 .section{
 background:white;
-margin:30px;
+margin:20px;
 padding:30px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
+border-radius:20px;
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
 }
 
 h2{
 color:#007BFF;
 }
 
-button{
-padding:12px 25px;
-background:#007BFF;
-color:white;
+.btn{
+display:block;
+width:85%;
+margin:12px auto;
+padding:15px;
+font-size:18px;
 border:none;
-font-size:16px;
+border-radius:30px;
+color:white;
 cursor:pointer;
-border-radius:25px;
 transition:0.3s;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 
-button:hover{
-background:#0056b3;
+.btn:hover{
 transform:scale(1.05);
 }
 
-.footer{
-background:black;
-color:white;
-padding:15px;
-margin-top:20px;
-}
-
-/* WhatsApp Floating Button */
+.call{ background:#007BFF; }
+.email{ background:#ff4444; }
+.whats{ background:#25D366; }
 
 .whatsapp{
 position:fixed;
 bottom:20px;
 right:20px;
-z-index:1000;
 }
 
 .whatsapp img{
 width:60px;
 }
 
-</style>
+.footer{
+background:black;
+color:white;
+padding:15px;
+margin-top:30px;
+}
 
+</style>
 </head>
 
 <body>
 
-<!-- WhatsApp Floating Button -->
-
-<a href="https://wa.me/923278172478?text=Hello%20%F0%9F%A4%97%20Afzal%20Mughal"
-class="whatsapp" target="_blank">
-
+<a href="https://wa.me/923278172478?text=Hello%20Afzal%20Mughal" class="whatsapp" target="_blank">
 <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
-
 </a>
 
 <div class="header">
 
 <h1 class="rainbow">Afzal Mughal</h1>
 
-<p style="color:white;">IT Student | Website Developer</p>
+<p>IT Student | Website Developer</p>
 
 <img src="photo.jpg" class="profile">
 
@@ -116,58 +115,64 @@ class="whatsapp" target="_blank">
 
 <div class="section">
 
-<h2 class="rainbow">About Me</h2>
+<h2>About Me</h2>
+<p>Hello! My name is Afzal Mughal. I am an IT student and I create simple websites.</p>
 
-<p>Hello! My name is Afzal Mughal. I am an IT student and I create simple websites for students and small businesses.</p>
+<h2>Contact Me</h2>
 
-<h2 class="rainbow">Contact Info</h2>
+<a href="tel:+923278172478">
+<button class="btn call">📞 Call Now</button>
+</a>
 
-<p><b>Phone:</b> 03278172478</p>
+<a href="mailto:afzalmughal72478@gmail.com">
+<button class="btn email">✉️ Send Email</button>
+</a>
 
-<p><b>Email:</b> afzalmughal72478@gmail.com</p>
+<a href="https://wa.me/923278172478?text=Hello%20Afzal%20Mughal" target="_blank">
+<button class="btn whats">💬 WhatsApp</button>
+</a>
 
-<h2 class="rainbow">Education</h2>
-
+<h2>Education</h2>
 <p>IT Student (3rd Year)</p>
 
-<h2 class="rainbow">Skills</h2>
-
+<h2>Skills</h2>
 <p>✔ HTML Website Development</p>
-
-<p>✔ Simple Portfolio Websites</p>
-
+<p>✔ Portfolio Websites</p>
 <p>✔ Basic Computer Skills</p>
 
-<p>✔ Manual & Automatic Car Driving</p>
+<h2>Objective</h2>
+<p>I am looking for job opportunities in website development.</p>
 
-<h2 class="rainbow">Objective</h2>
+</div>
 
-<p>I am looking for job opportunities in website development or driving.</p>
 
-<h2 class="rainbow">My Services</h2>
+<!-- Laptop Request Proof Section -->
 
-<p>✔ Simple Websites</p>
+<div class="section">
 
-<p>✔ Student Portfolio</p>
+<h2>Student Laptop Request – Developer Proof</h2>
 
-<p>✔ Small Business Website</p>
+<p>
+My name is <b>Afzal Mughal</b>, a BS IT (3rd Year) student and passionate web developer.
+Due to financial problems, I do not have a laptop and I currently practice coding on my mobile using the Acode coding application.
+</p>
 
-<br>
+<p>
+I have created this portfolio website as proof of my web development learning using HTML and CSS.
+A laptop will help me continue learning advanced programming and build professional projects.
+</p>
 
-<a href="https://wa.me/923278172478?text=Hello%20%F0%9F%A4%97%20Afzal%20Mughal" target="_blank">
+<p><b>CNIC:</b> 44403-6744740-1</p>
+<p><b>Contact:</b> 03278172478</p>
 
-<button style="background:#25D366;">
-Chat on WhatsApp
-</button>
-
+<a href="https://wa.me/923278172478?text=Hello%20Afzal%20Afzal%20Mughal" target="_blank">
+<button class="btn whats">Contact on WhatsApp</button>
 </a>
 
 </div>
 
 <div class="footer">
-
 <p>© 2026 Afzal Mughal</p>
-
 </div>
 
 </body>
